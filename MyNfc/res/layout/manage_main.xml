@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+        <!-- 
+    android:background="@drawable/bg" 
+
+    <LinearLayout
+        style="@style/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理后台" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/manage_nologin"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/fw_z_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fw_y" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/fangwei_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:text=">>>" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/fw_y_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:background="@drawable/fw_j" >
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            style="@style/lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dip"
+            android:text="请刷卡进入管理后台" >
+        </TextView>
+    </LinearLayout>-->
+
+     <!-- 会员管理 -->
+
+    <LinearLayout
+        android:id="@+id/manage_login"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dip"
+        android:background="@drawable/frameline"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="会员Id"
+                android:textSize="18dip" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="添加时间"
+                android:textSize="18dip" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ffffff" 
+            android:layout_marginBottom="5dip">
+         </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_memberlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <!-- 产品页面 -->
+
+    <LinearLayout
+        android:id="@+id/card_member_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dip"
+        android:background="@drawable/frameline"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="标签Id"
+                android:textSize="18dip" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="添加时间"
+                android:textSize="18dip" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#ffffff" 
+            android:layout_marginBottom="5dip">
+         </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_cardlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <!-- 会员第一次登录页面 -->
+
+    <LinearLayout
+        android:id="@+id/member_first_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dip"
+        android:background="@drawable/frameline"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="会员id:"
+                android:textSize="18dip" />
+
+            <TextView
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="18dip"
+                android:id="@+id/card_id_tv" />
+        </LinearLayout>
+
+        <!-- 会员名 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="会员名:"
+                android:textSize="18dip" />
+
+            <EditText
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="18dip"
+                android:id="@+id/user_name_et" />
+        </LinearLayout>
+
+        <!-- 公司名称 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="公司名称:"
+                android:textSize="18dip" />
+
+            <EditText
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="18dip"
+                android:id="@+id/firm_name_et" />
+        </LinearLayout>
+
+        <!-- 联系电话 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="联系电话:"
+                android:textSize="18dip" />
+            <EditText
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="18dip"
+                    android:id="@+id/tel_number_et"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <!-- 官网 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="官方网站："
+                    android:textSize="18dip" />
+
+                <EditText
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="18dip"
+                    android:id="@+id/firm_url_et" />
+            </LinearLayout>
+
+            <!-- 公司地址 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="公司地址："
+                    android:textSize="18dip" />
+
+                <EditText
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="18dip"
+                    android:id="@+id/firm_address_et" />
+            </LinearLayout>
+            
+            <!-- 防伪地址 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="防伪地址："
+                    android:textSize="18dip" />
+
+                <EditText
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="18dip"
+                    android:id="@+id/anti_url_et" />
+            </LinearLayout>
+            
+             <!-- 完成 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="完成"
+                    android:textSize="18dip"
+                    android:id="@+id/info_btn" />
+
+            </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

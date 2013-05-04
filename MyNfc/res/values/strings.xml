@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="app_name">NFC管理后台演示</string> -->
+    <string name="NET_ERROR">网络连接错误,请稍候再试...</string>
+    <string name="ADD_OK">入库成功</string>
+    <string name="DEL_OK">删除成功</string>
+    <string name="INFO_ADD_OK">资料完善成功</string>
+    <string name="ANTI_URL_OK">修改成功</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

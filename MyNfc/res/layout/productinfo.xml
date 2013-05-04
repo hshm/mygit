@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理后台" >
+        </TextView>
+    </LinearLayout> 
+
+   <LinearLayout
+        android:id="@+id/member_first_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dip"
+        android:background="@drawable/frameline"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="标签id:"
+                android:textSize="18dip" />
+
+            <TextView
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dip"
+                android:id="@+id/card_id_tv" />
+        </LinearLayout>
+
+        <!-- 防伪地址 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="防伪地址:"
+                android:textSize="18dip" />
+
+            <TextView
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dip"
+                android:id="@+id/card_url_tv" />
+        </LinearLayout>
+
+        <!-- 添加时间 
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="添加时间:"
+                android:textSize="18dip" />
+
+            <TextView
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18dip"
+                android:id="@+id/firm_name_et" />
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+</LinearLayout>

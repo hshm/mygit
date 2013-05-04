@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<!-- 系统 -->
+	<style name="sys">
+		<item name="android:textSize">24dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 按钮 -->
+	<style name="btn">
+		<item name="android:textSize">20dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<!-- 标签 -->
+	<style name="lbl">
+		<item name="android:textSize">20dip</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	
+	<!-- 标签 -->
+	<style name="title">
+		<item name="android:background">#ffffff</item>
+	</style>
+
+</resources>
